@@ -1,2 +1,4 @@
 # CursoEmVideo
- Curso de HTML5 e CSS3 do CursoEmVideo
+HTML5 and CSS3 course from CursoEmVideo
+
+Updating README to test commiting to github
