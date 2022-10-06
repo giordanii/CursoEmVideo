@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+    <style>
+
+        *{
+            margin: auto;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .mark{
+            background-color: grey;
+            color: white;
+            font-weight: bolder;
+        }
+
+        td{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Subject Grades</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col" class="mark">Field</th>
+                <th rowspan="2" scope="col" class="mark">Subject</th>
+                <th colspan="2" scope="colgroup" class="mark">Grades</th>
+                <th rowspan="2" scope="col" class="mark">Final</th>
+            </tr>
+            <tr>
+                <th scope="col" class="mark">Grade 1</th>
+                <th scope="col" class="mark">Grade 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Math & Science</th>
+                <td>Math</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="mark" style="text-align: start;">Math & Science Grades</th>
+                <td class="mark">8.5</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanities</th>
+                <td>History</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Geography</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row" class="mark" style="text-align: start;">Humanities Grades</th>
+                <td class="mark">8.5</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
