@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing addition</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 75, 0.555);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1, p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>I'm testing math additions with JS.</p>
+    <script defer>
+        var n1 = Number.parseInt(window.prompt('Type a number'));
+        var n2 = Number.parseInt(window.prompt('Type another number'));
+        var r = n1 + n2;
+        window.alert(`The sum of ${n1} and ${n2} is ${r}`);
+    </script>
+</body>
+</html>
