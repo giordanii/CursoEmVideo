@@ -1,4 +1,4 @@
 # CursoEmVideo
-HTML5 and CSS3 course from CursoEmVideo
+HTML5, CSS3 and JS course from CursoEmVideo
 
 Updating README to test commiting to github
