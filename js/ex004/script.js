@@ -10,6 +10,7 @@ function out() {
 function move() {
     areaDiv.innerText = 'You moving around the area';
     areaDiv.style.background = 'purple';
+    areaDiv.style.fontWeight = 'bolder'
 }
 function click() {
     areaDiv.innerText = 'You clicked';
