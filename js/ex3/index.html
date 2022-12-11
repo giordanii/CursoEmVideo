@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Counter with user input</title>
+</head>
+<body>
+    <header>
+        <h1>Let's count!</h1>
+    </header>
+    <main>
+        <section>
+            <div id="inputs">
+                <p> Starting Number:
+                    <input type="number" name="nb1" id="nb1" required>
+                </p>
+                <p> Ending Number:
+                    <input type="number" name="nb2" id="nb2" required>
+                </p>
+                <p> Counting by:
+                    <input type="number" name="nb3" id="nb3" required>
+                </p>
+                <input type="button" value="Count" id="count" onclick="math()">
+            </div>
+            <div id="res">
+                <p>Waiting for user input...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by <a href="#">João Giordani</a></p>
+    </footer>    
+    <script src="./assets/script.js"></script>
+</body>
+</html>
