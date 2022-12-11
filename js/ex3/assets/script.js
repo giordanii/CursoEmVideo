@@ -14,6 +14,11 @@ function math(){
         var e = Number(nb2.value);
         var by = Number(nb3.value);
 
+        if(by <= 0) {
+            window.alert('Counting by input must be greater than zero. The counting will consider it 1');
+            by = 1
+        }
+
         if (i == e) { // SAME VALUE
             res.innerHTML = `Error. Your starting number <span>${i}</span> is the same as your ending number <span>${e}</span>.`
         } else if (i < e) { //ASCENDING
