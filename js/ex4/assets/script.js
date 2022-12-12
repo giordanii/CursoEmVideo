@@ -11,6 +11,7 @@ function math(){
         while(c <= 10){
             let item = document.createElement('option');
             item.text = `${i} x ${c} = ${i*c}`
+            item.value = `tab${c}`
             tab.appendChild(item)
             c++
         }  
