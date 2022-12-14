@@ -20,18 +20,45 @@ function inList(n, l) {
 }
 
 function add(){
-    if(isNumber(num.value) && !inList(num.value, valores)){
+    if(isNumber(num.value) && !inList(num.value, values)){
         values.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Value ${num.value} was added.`
+        tab.appendChild(item)
+        res.innerHTML = ''
     } else {
         window.alert('Number not in range or already added.')
     }
+    num.value = ''
+    num.focus()
 }
 
-function analyze(){
+function analyze() {
+    if (values.length == 0) {
+        window.alert('No numbers were added. Not possible to analyze.')
+    } else {
+        let tot = values.length
+        let high = values[0]
+        let low = values[0]
+        let sum = 0
+        let avg = 0
+        for (let pos in values) {
+            sum += values[pos]
+            if (values[pos] > high)
+            high = values[pos]
+            if (values[pos] < low)
+            low = values[pos]
+        }
+            res.innerHTML = ''
+            res.innerHTML += `<p>Overall, we have ${tot} numbers registered.</p>`
+            res.innerHTML += `<p>The highest number registered is ${high}.</p>`
+            res.innerHTML += `<p>The lowest number registered is ${low}.</p>`
+            res.innerHTML += `<p>Adding all numbers registered the sum is ${sum}.</p>`
 
+        }
+}
+    
+    /* 
     res.innerHTML = `Overall, we have ${tab.length} numbers registered.`
-    res.innerHTML = `The highest number registered is ${tab}.`
-    res.innerHTML = `The lowest number registered is ${tab}.`
-    res.innerHTML = `Adding all numbers registered the sum is ${tab}.`
     res.innerHTML = `The average from registered number is ${tab}.`
-}
+    */
