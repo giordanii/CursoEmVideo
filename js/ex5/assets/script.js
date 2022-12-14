@@ -41,7 +41,6 @@ function analyze() {
         let high = values[0]
         let low = values[0]
         let sum = 0
-        let avg = 0
         for (let pos in values) {
             sum += values[pos]
             if (values[pos] > high)
@@ -54,11 +53,6 @@ function analyze() {
             res.innerHTML += `<p>The highest number registered is ${high}.</p>`
             res.innerHTML += `<p>The lowest number registered is ${low}.</p>`
             res.innerHTML += `<p>Adding all numbers registered the sum is ${sum}.</p>`
-
+            res.innerHTML += `<p>The average from registered numbers is ${Math.floor(sum / values.length)}.</p>`
         }
 }
-    
-    /* 
-    res.innerHTML = `Overall, we have ${tab.length} numbers registered.`
-    res.innerHTML = `The average from registered number is ${tab}.`
-    */
